@@ -1,0 +1,14 @@
+
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«æÆÌÙ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡†öØ8­æÆÌÙ1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8¶æÆÌÙ1
+o
+java:S6204""RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8·æÆÌÙ1
+C
+java:S3864 "!Remove this use of "Stream.peek".(Âİ‹Ôÿÿÿÿÿ8¸æÆÌÙ1
+=
+java:S3864"!Remove this use of "Stream.peek".(Éç˜B8¸æÆÌÙ1
+L	java:S106 "+Replace this use of System.out by a logger.(Âİ‹Ôÿÿÿÿÿ8¸æÆÌÙ1
+j	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¶‘8¹æÆÌÙ1
+L	java:S106-"+Replace this use of System.out by a logger.(Ä’òÿÿÿÿÿ8ºæÆÌÙ1

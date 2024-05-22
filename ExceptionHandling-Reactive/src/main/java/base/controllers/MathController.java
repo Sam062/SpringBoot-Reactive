@@ -24,7 +24,7 @@ public class MathController {
                         sink.next(input);
                 })
                 .cast(Integer.class)
-                .flatMap(in -> Mono.just(new MathResponse(in * in, new Date())));
+                .map(in -> new MathResponse(in * in, new Date()));
     }
 
 }

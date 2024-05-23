@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringReactive" />
         <module name="ExceptionHandling-Reactive" />
+        <module name="FunctionalEndpoints-Calculator" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ExceptionHandling-Reactive" options="-parameters" />
+      <module name="FunctionalEndpoints-Calculator" options="-parameters" />
       <module name="SpringReactive" options="-parameters" />
     </option>
   </component>

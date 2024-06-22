@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/SpringReactive/pom.xml" />
         <option value="$PROJECT_DIR$/ExceptionHandling-Reactive/pom.xml" />
         <option value="$PROJECT_DIR$/FunctionalEndpoints-Calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/Product-Service/pom.xml" />
       </list>
     </option>
   </component>

@@ -4,7 +4,7 @@ import base.dto.ProductDto;
 import base.repo.ProductRepo;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Range;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -41,6 +41,12 @@ public class ProductService {
 
     public Mono<ProductDto> getProductById(Integer productId) {
         return productRepo.findById(productId)
+                .map(MapperUtils::productToDto);
+    }
+
+    public Flux<ProductDto> getProductByPriceRange(Double min, Double max) {
+        return productRepo.findByPriceBetween(Range.closed(min, max))
+                //Range.closed is inclusive & Range.open is exclusive
                 .map(MapperUtils::productToDto);
     }
 

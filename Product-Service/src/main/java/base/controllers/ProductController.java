@@ -48,11 +48,18 @@ public class ProductController {
                 .defaultIfEmpty(ResponseEntity.noContent().build());
     }
 
+    @GetMapping("productByPriceRange/{min}/{max}")
+    public Flux<ProductDto> productByPriceRange(
+            @PathVariable Double min,
+            @PathVariable Double max) {
+        return productService
+                .getProductByPriceRange(min, max);
+    }
+
     @GetMapping("getAllProducts")
     public Flux<ProductDto> getAllProducts() {
         return productService
-                .getAllProducts()
-                .delayElements(Duration.ofMillis(2000));
+                .getAllProducts();
     }
 
 }
